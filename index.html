@@ -3,10 +3,10 @@
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	<title>*|MC:SUBJECT|*</title>
+	<title>Dazed Digital Newsletter</title>
 
 	<!-- Facebook sharing information tags -->
-	<meta property="og:title" content="*|MC:SUBJECT|*" />
+	<meta property="og:title" content="Dazed Digital Newsletter" />
 
 	<style type="text/css">
 		/* EMBEDDED CSS
@@ -53,7 +53,7 @@
 
 		/* This CSS will overwrite Hotmails default CSS and make your headings appear consistant with Gmail.
 		   From there, you can override with inline CSS if needed. */
-		h1, h2, h3, h4, h5, h6 {color:#333333; line-height:100%;}
+		h1, h2, h3, h4, h5, h6 {color:#000001; line-height:100%;}
 
 
 		/****** END RESETTING DEFAULTS ********/
@@ -66,11 +66,11 @@
 		   create a wrapper div around your email and that div will inherit your embedded body styles.
 		   The "#body_style" is defined for AOL because it does not support your embedded body definition nor
 		   your body tag, we will use this class in our wrapper div. */
-		body, #body_style {width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
+		body, #body_style {width:100% !important; min-height:1000px; color:#000001; background:#ffffff; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
 
 		/* This is the embedded CSS link color for Gmail. This will overwrite Hotmail and Yahoo Beta's
 		   embedded link colors and make it consistent with Gmail. Also use this rule on inline CSS. */
-		a         {color:#114eb1; text-decoration:none;}
+		a         {color:#000001; text-decoration:none;}
 
 		/* There is no way to set these inline so you have the option of adding pseudo class definitions here.
 		   They won't work for Gmail or older Lotus Notes but it's a nice addition for all other clients. */
@@ -87,6 +87,8 @@
 		a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333333; pointer-events:none; cursor:default;}
 		.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
 
+		.hideBig {display:none !important;}
+
 
 		/****** MEDIA QUERIES ********/
 		/* You must use attribute selectors in your media queries to prevent Yahoo from rendering these styles.	
@@ -99,13 +101,16 @@
 			
 			/* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
 			body[yahoo] .hide {display:none !important;}
+			body[yahoo] .hideBig {display:block !important;}
+
+			body[yahoo] .smalltext {font-size: 16px !important;}
 
 			/* Adjust table widths at smaller screen sizes. */
 			body[yahoo] .table {width:320px !important;}
-			body[yahoo] .innertable {width:280px !important;}
+			body[yahoo] .innertable {width:280px !important; display:block;}
 
 			/* Resize hero image at smaller screen sizes. */
-			body[yahoo] .heroimage {width:280px !important; height:186px !important;}
+			body[yahoo] .heroimage {width:280px !important; height:186px; padding-top:24px !important;}
 
 			/* Resize page shadow at smaller screen sizes. */
 			body[yahoo] .shadow {width:280px !important; height:4px !important;}
@@ -145,8 +150,8 @@
 </head>
 
 
-<body style="width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
-alink="#9d470a" link="#9d470a" bgcolor="#e0dbcf" text="#333333" yahoo="fix">
+<body style="width:100% !important; min-height:1000px; color:#000001; background:#ffffff; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
+alink="#000001" link="#9d470a" bgcolor="#ffffff" text="#333333" yahoo="fix">
 <!-- You may adjust each of the values above for your template as needed.
 
 We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to
@@ -166,7 +171,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 
 		<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
 		<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100% !important; margin:0; padding:0;">
-			<tr bgcolor="#f0f0f0">
+			<tr bgcolor="#ffffff">
 				<td>
 
 
@@ -198,7 +203,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 										<!-- header left: logo and link to homepage -->
 										<td width="193" valign="top">
 											<!-- set an image for header left - must be 320px width (height can be variable) -->
-											<a href="http://www.dazeddigital.com/" target="_blank"><img src="http://www.dazeddigital.com/content/images/logo.png" width="193" height="32" border="0" alt="Header (left)" style="padding-top: 12px; padding-left: 24px;"/></a>
+											<a href="http://www.dazeddigital.com/" target="_blank"><img src="http://www.dazeddigital.com/content/images/logo.png" width="193" height="32" border="0" alt="Header (left)" style="padding-top: 12px; padding-left: 20px;"/></a>
 										</td>
 										<!-- /header left -->
 										<!-- header right: hidden in mobile version 
@@ -212,8 +217,8 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 							</td>
 						</tr>
 						<tr bgcolor="#ffffff" class="hide">
-						       <td style="padding-left:24px; padding-top:12px;"><!-- Menu -->
-	                   	            <table border="0" align="left" width="100%" cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left; padding-top: 16px; padding-left:24px;">
+						       <td style="padding-left:19px; padding-top:12px;"><!-- Menu -->
+	                   	            <table border="0" align="left" width="100%" cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left;">
 		 					            <tr style="margin: 0px;">
 		 						            <th width="86"><a style="color:#000001; text-decoration: none;" href="http://www.dazeddigital.com/fashion">Fashion</a></th>
 		 				  		            <th width="69" ><a style="color:#000001; text-decoration: none;" href="http://www.dazeddigital.com/music">Music</a></th>
@@ -255,11 +260,16 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 									<!-- hero article main image: must be 560px x 186px -->
 									<tr>
 										<td>
+											<h3 style="font-size: 12px; padding: 18px 0 0 0; text-align: left; margin: 0; text-transform: uppercase; color:#fff;">
+												<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+													<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Playlist</span>
+												</a>
+											</h3>										
 														<!-- hero article heading text -->
-											<h1 style="color:#000001; margin-bottom:.5em; margin-top:0.5em;">Hi *|TITLE:FNAME|*</h1>
+											<h1 style="color:#000001; margin-bottom:0px; margin-top:6px;">Dazed December Playlist</h1>
 											<!-- /hero article heading text -->
 											<!-- hero article paragraph text -->
-											<p style="margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, quo epicuri volutpat no. Causae option accusamus in est. Mea id ignota meliore facilis, cu vim omnium appareat mediocrem. Eu oblique voluptua electram his. Mei eu movet recteque. Vis nulla graeci praesent ad, mediocrem expetenda pro ad.</p>
+											<p style="margin-top:0; padding-bottom:24px;">Prep for December's imminent apocalypse with new tracks from coverstar RiFF RaFF to Jessie Ware, Eaux and Chromatics</p>
 											<!-- /hero article paragraph text -->
 										</td>
 									</tr>
@@ -273,28 +283,28 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 								-->
 								</table>
 								<!-- /hero article -->
+								<!--
 
-
-								<!-- standard article (left text) -->
+								 standard article (left text)
 								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
 									<tr valign="top">
-										<!-- standard article textarea -->
+										standard article textarea 
 										<td>
 											<table width="270" cellpadding="0" cellspacing="0" border="0">
 												<tr valign="top">
-													<!-- standard article icon -->
-													<td width="65">
+													standard article icon
+													<td width="65" class="hideBig">
 														<img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
 													</td>
-													<!-- /standard article icon -->
-													<!-- standard article heading text -->
+													/standard article icon
+													standard article heading text 
 													<td>
 														<h1 style="color:#666666;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
 													</td>
-													<!-- /standard article heading text -->
+													 /standard article heading text 
 												</tr>
 											</table>
-											<!-- standard article paragraph text -->
+											standard article paragraph text 
 											<table width="100%" cellpadding="10" cellspacing="0" border="0">
 												<tr valign="top">
 													<td>
@@ -302,158 +312,409 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 													</td>
 												</tr>
 											</table>
-											<!-- /standard article paragraph text -->
+											 /standard article paragraph text 
 										</td>
-										<!-- /standard article textarea -->
-										<!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
+										 /standard article textarea -
+										standard article main image: hidden in mobile version - must be 280px width (height can be variable) 
 										<td class="hide">
 											<img style="margin-bottom:1em;" src="img/large-photo-example-r.jpg" width="280" height="240" border="0" alt="" />
 										</td>
-										<!-- /standard article main image -->
+										</standard article main image 
 									</tr>
 								</table>
-								<!-- /standard article (left text) -->
-
+								 /standard article (left text) 
+								-->
 
 								<!-- standard article (right text) -->
+
 								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+
+
+
 									<tr valign="top">
-										<!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
-										<td class="hide">
-											<img style="margin-bottom:1em;" src="img/large-photo-example-l.jpg" width="280" height="240" border="0" alt="" />
-										</td>
+										<!-- standard article main image -->
+										<td>
+											<img style="margin-bottom:12px;" src="img/article-1.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
 										<!-- /standard article main image -->
+
 										<!-- standard article textarea -->
 										<td>
-											<table width="270" cellpadding="0" cellspacing="0" border="0">
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
 												<tr valign="top">
-													<!-- standard article icon -->
-													<td width="65">
-														<img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
-													</td>
-													<!-- /standard article icon -->
 													<!-- standard article heading text -->
-													<td>
-														<h1 style="color:#666666;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">First Look</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Marcelo Burlon's pick of Givenchy Fall 2013 menswear</a></h1>
 													</td>
+													
 													<!-- /standard article heading text -->
 												</tr>
 											</table>
 											<!-- standard article paragraph text -->
-											<table width="100%" cellpadding="10" cellspacing="0" border="0">
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
 												<tr valign="top">
 													<td>
-														<p style="margin-top:0; margin-bottom:0;">Inermis indoctum vis in, has soleat complectitur te. Ut est stet civibus, mucius iriure ad duo. Sumo tantas et est, ea duo elitr utroque, ne mea dicant tincidunt scribentur. Sit dico accusata et. Sint inimicus cu nam, odio velit minim sit ut.</p>
+														<p style="margin-top:0; margin-bottom:0;">Riccardo Tisci takes us to the motorcycle workshop: Rottweilers are the new Dobermans....</p>
 													</td>
 												</tr>
 											</table>
-											<!-- /standard article paragraph text -->
-										</td>
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">First Look</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Marcelo Burlon's pick of Givenchy Fall 2013 menswear</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Riccardo Tisci takes us to the motorcycle workshop: Rottweilers are the new Dobermans....</p>
+													</td>
+												</tr>
 										<!-- /standard article textarea -->
-									</tr>
 								</table>
-								<!-- /standard article (right text) -->
 
 
-								<!-- secondary article (short story) -->
-								<table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+
+
+
 									<tr valign="top">
+										<!-- standard article main image -->
 										<td>
-											<table align="left" width="280" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top">
-													<!-- blank cell - do not use for content -->
-													<td bgcolor="#ffffff" height="18">
-														<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-													</td>
-													<!-- /blank cell -->
-													<!-- secondary article (120px image) main image -->
-													<td width="120" rowspan="2">
-														<a href="{*WINNERSLINK*}" target="_blank"><img src="img/secondary-article-short-story.jpg" width="120" height="90" border="0" alt="" /></a>
-													</td>
-													<!-- /secondary article (120px image) main image -->
-												</tr>
-												<tr valign="top">
-													<td>
-														<table width="160" cellpadding="0" cellspacing="0" border="0" style="padding-bottom:0;">
-															<tr>
-																<!-- blank cell - do not use for content -->
-																<td height="10" colspan="2">
-																	<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-																</td>
-																<!-- /blank cell -->
-															</tr>
-															<tr>
-																<!-- blank cell - do not use for content -->
-																<td width="10">
-																	<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-																</td>
-																<!-- /blank cell -->
-																<!-- secondary article (120px image) heading text -->
-																<td>
-																	<h1 style="color:#666666;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
-																</td>
-																<!-- /secondary article (120px image) heading text -->
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table align="right" width="280" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top" class="hide">
-													<!-- blank cell - do not use for content -->
-													<td bgcolor="#ffffff" height="18">
-														<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-													</td>
-													<!-- /blank cell -->
-												</tr>
-												<tr valign="top">
-													<td>
-														<!-- secondary article (120px image) paragraph text -->
-														<table width="100%" cellpadding="10" cellspacing="0" border="0">
-															<tr>
-																<td>
-																	<p style="margin-top:0; margin-bottom:0;">Ne sea soluta voluptatum. Ut nec augue disputationi, unum utamur vis in. Possit gubergren at mea. Sed an erant movet.</p>
-																</td>
-															</tr>
-														</table>
-														<!-- /secondary article (120px image) paragraph text -->
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-									<!--<tr>
-									
-										<td>
-											<img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
-										</td>
+											<img style="padding-bottom:1em;" src="img/article-2.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
+										<!-- /standard article main image -->
 
-									</tr>-->
+										<!-- standard article textarea -->
+										<td>
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<!-- standard article heading text -->
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+											</table>
+											<!-- standard article paragraph text -->
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<td>
+														<p style="margin-top:0; margin-bottom:0;">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+											</table>
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+										<!-- /standard article textarea -->
 								</table>
-								<!-- /secondary article (short story) -->
 
 
-								<!-- secondary article (long story) -->
-								<table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr>
+								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+
+
+
+									<tr valign="top">
+										<!-- standard article main image -->
 										<td>
-											<table width="560" cellpadding="10" cellspacing="0" border="0" align="center" class="innertable">
-												<tr>
+											<img style="padding-bottom:1em;" src="img/article-3.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
+										<!-- /standard article main image -->
+
+										<!-- standard article textarea -->
+										<td>
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<!-- standard article heading text -->
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+											</table>
+											<!-- standard article paragraph text -->
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
 													<td>
-														<h1 style="font-size:26px; line-height:1.1; font-weight:normal; margin-top:0; margin-bottom:.5em; color:#666666;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a> <a class="hide" href="#" target="_blank"><img style="display:block; border:none; outline:none; text-decoration:none; margin-left:5px;" align="right" src="img/secondary-article-long-story.jpg" width="140" height="112" border="0" alt="" /></a></h1>
-														<p style="margin-top:0; margin-bottom:0;">Ex graeci civibus eleifend vim, mel et utroque fastidii. Sed eu omnis disputando, voluptatum appellantur vix an. Exerci detracto at his, at illud debitis vis, augue congue inimicus his ei. Cetero intellegat ius an. Eu sed nobis tation, erant elaboraret eam at.</p>
+														<p style="margin-top:0; margin-bottom:0;">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
 													</td>
 												</tr>
 											</table>
-										</td>
-									</tr>
-									<!--<tr>
-										<td>
-											<img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
-										</td>
-									</tr>-->
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+										<!-- /standard article textarea -->
 								</table>
-								<!-- /secondary article (long story) -->
+
+								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+									<tr valign="top">
+										<!-- standard article main image -->
+										<td>
+											<img style="padding-bottom:1em;" src="img/article-4.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
+										<!-- /standard article main image -->
+
+										<!-- standard article textarea -->
+										<td>
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<!-- standard article heading text -->
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+											</table>
+											<!-- standard article paragraph text -->
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<td>
+														<p style="margin-top:0; margin-bottom:0;">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+											</table>
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+										<!-- /standard article textarea -->
+								</table>
+
+								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+									<tr valign="top">
+										<!-- standard article main image -->
+										<td>
+											<img style="padding-bottom:1em;" src="img/article-5.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
+										<!-- /standard article main image -->
+
+										<!-- standard article textarea -->
+										<td>
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<!-- standard article heading text -->
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+											</table>
+											<!-- standard article paragraph text -->
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<td>
+														<p style="margin-top:0; margin-bottom:0;">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+											</table>
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+										<!-- /standard article textarea -->
+								</table>
+
+								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+
+									<tr valign="top">
+										<!-- standard article main image -->
+										<td>
+											<img style="padding-bottom:1em;" src="img/article-6.jpg" width="270" height="180" border="0" alt="" />
+										</td>										
+										<!-- /standard article main image -->
+
+										<!-- standard article textarea -->
+										<td>
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<!-- standard article heading text -->
+													<td >
+														<!-- Category -->
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<!--  article heading -->
+														<h1 style="color:#666666; width:270px; font-size: 16px; font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+											</table>
+											<!-- standard article paragraph text -->
+											<table width="270px" cellpadding="0" cellspacing="0" border="0" class="hide">
+												<tr valign="top">
+													<td>
+														<p style="margin-top:0; margin-bottom:0;">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+											</table>
+
+
+											<!--HideBig-->
+												<tr valign="top" class="hideBig">
+
+													<!-- standard article heading text -->
+													
+													<td >
+														<h3 style="font-size: 12px; padding: 4px 0 6px 0px; text-align: left; margin: 0; text-transform: uppercase; color:#fff; display: block;">
+															<a style="color:#fff; text-decoration:none;" href="http://dazeddigital.com/artsandculture">
+																<span style="color:#fff; font-weight: bold; background-color: #000001; padding: 4px">Q + A</span>
+															</a>
+														</h3>
+														<h1 style="color:#666666; width:270px; font-size: 16px;  font-weight:bold;"><a style="color:#000001;" href="#" target="_blank">Let's Talk About Sex</a></h1>
+													</td>
+													
+													<!-- /standard article heading text -->
+												</tr>
+
+												<tr valign="top" class="hideBig">
+													<td>
+														<p style="margin-top:0; padding-bottom:24px; width:270px">Betony Vernon, the sexual anthropologist and jeweller extraordinaire discusses her debut as a sculptor for the KAMA: Sex & Design exhibition</p>
+													</td>
+												</tr>
+										<!-- /standard article textarea -->
+								</table>
 
 
 							</td>
@@ -461,7 +722,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						<!-- /CONTENT -->
 
 
-						<!-- FOOTER -->
+						<!-- FOOTER 
 						<tr>
 							<td>
 								<table bgcolor="#cccccc" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -493,7 +754,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 								</table>
 							</td>
 						</tr>
-						<!-- /FOOTER -->
+						/FOOTER -->
 
 
 						<!-- SUBFOOTER 
