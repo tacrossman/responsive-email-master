@@ -108,6 +108,7 @@
 			/* Adjust table widths at smaller screen sizes. */
 			body[yahoo] .table {width:320px !important;}
 			body[yahoo] .innertable {width:280px !important; display:block;}
+			body[yahoo] .menuresponsive {padding-left:16px !important; display:block;}
 
 			/* Resize hero image at smaller screen sizes. */
 			body[yahoo] .heroimage {width:280px !important; height:186px; padding-top:24px !important;}
@@ -185,27 +186,11 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 					<!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
 					<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
 
-
-						<!-- PREHEADER
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0" border="0">
-									<tr>
-										<td valign="top" style="font-size:11px;">
-											Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank" style="color:#114eb1; text-decoration:none;">View it in your browser</a>.
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						/PREHEADER -->
-
-
 						<!-- HEADER -->
 						<tr>
 							<td>
 								<!-- set a value for bgcolor -->
-								<table bgcolor="#ffffff" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding:12px;">	
+								<table bgcolor="#ffffff" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding:12px;" class="menuresponsive">	
 									<tr>
 										<!-- header left: logo and link to homepage -->
 										<td width="193" valign="top">
@@ -225,14 +210,14 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						</tr>
 						<tr bgcolor="#ffffff" class="">
 						       <td style="padding-left:19px; padding-top:24px;"><!-- Menu -->
-	                   	            <table border="0" align="left"  cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left; margin-bottom:12px;">
+	                   	            <table border="0" align="left"  cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left; margin-bottom:12px;" class="menuresponsive">
 		 					            <tr style="margin: 0px;">
 		 						            <th ><a style="color:#000001; text-decoration: none;  padding-right:24px;" href="http://www.dazeddigital.com/fashion">Fashion</a></th>
 		 				  		            <th ><a style="color:#000001; text-decoration: none; padding-right:24px;" href="http://www.dazeddigital.com/music">Music</a></th>
 		 						            <th ><a style="color:#000001; text-decoration: none; padding-right:24px;" href="http://www.dazeddigital.com/artsandculture">Art + Culture</a></th>
 		 						        </tr>
 		 						         </table>
-		 						         <table border="0" align="left"  cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left;">
+		 						         <table border="0" align="left"  cellpadding="0" cellspacing="0"  style="font-size: 16px; text-align:left;" class="menuresponsive">
 		 						         	<tr>
 		 						            <th ><a style="color:#000001; text-decoration: none; padding-right:24px;" href="http://www.dazeddigital.com/photography">Photography</a></th>
 		 						            <th ><a style="color:#000001; text-decoration: none; padding-right:24px;" href="http://www.dazeddigital.com/video">Video</a></th>
@@ -689,37 +674,36 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						<!-- FOOTER --> 
 						<tr>
 							<td>
-								<table bgcolor="#ffffff" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0">
+								<table bgcolor="#ffffff" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
 								<tr>
 									<td style="background:none; border:solid 1px #000001; border-width:1px 0 0 0; height:1px; width:100%; margin:0px 0px 0px 0px; padding-top:12px;"></td>
 								</tr>
 
 								<tr>
 									<td>
-											<table border="0" width="80%" cellpadding="0" cellspacing="0" style="background: #ffffff;" align="center">
+										<table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;" align="center">
 
-                					     <tr><!-- Latest Issue Promo -->
-							                <td valign="top" width="100%" height="200" bgcolor="#fff" style="background-color: #ffffff;" align="center">
-								                <h2 style="margin: 0; font-size: 14px; padding-bottom: 12px; color:#000001;">
-								                <a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><span style="color:#000001; font-weight: bold;">Dazed & Confused January 2013: Against The Grain</span></a></h2>	
-								                <a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><img style="border:none;" alt="" src="img/cover.jpg"></a>
-							                </td>
- 						                </tr>
-
-                 						<tr> <!-- App advert -->
-                 							<td valign="bottom" width="100%" height="48" bgcolor="#fff" style="margin: 0; padding-bottom: 24px; background-color: #ffffff;" align="center">
-                 								<a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><img src="img/app.jpg" alt=""/></a>
+                 						<tr> <!-- Paid Advert -->
+                 							<td align="center" ="bottom" width="300" height="250" bgcolor="#fff" style=" padding-bottom: 24px; background-color: #ffffff;">
+                 								<img src="http://placehold.it/350x250" alt="" />
                  							</td>
 										</tr>
 
-
-                 						<tr> <!-- Paid Advert
-                 							<td valign="bottom" width="160" height="600" bgcolor="#fff" style="padding-left:12px; padding-bottom: 24px; background-color: #ffffff;">
-                 								<img src="" alt="" />
-                 							</td>-->
-										</tr>
-
-
+                					     <tr><!-- Latest Issue Promo -->
+							                <td valign="top" width="100%" bgcolor="#fff" style="background-color: #ffffff;" align="center">
+							                	<table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;" align="center">
+							                		<tr>
+							                			<td align="center">
+								                <h2 style="margin: 0; font-size: 14px; padding-bottom: 12px; color:#000001;">
+								                <a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><span style="color:#000001; font-weight: bold;">Dazed & Confused January 2013: Against The Grain</span></a></h2>	
+								                <a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><img style="border:none;" alt="" src="img/cover.jpg"></a>
+								            </tr>
+								        </td>
+                     							<td valign="bottom" width="100%" height="48" bgcolor="#fff" style="margin: 0; padding-bottom: 24px; background-color: #ffffff;" align="center">
+                 								<a style="text-decoration: none;" href="http://dazeddigital.com/blog/article/15093/1/dazed-digitals-big-refresh"><img src="img/app.jpg" alt=""/></a>
+                 							</td>
+								            </table>
+ 						                </tr>
 					                </table>
 									
 									</td>
